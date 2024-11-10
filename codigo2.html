@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="Css/custom.css">
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* Asegura que el contenedor principal ocupe toda la altura disponible */
+      body, html {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+      }
+
+      /* El main se expande para ocupar el espacio restante */
+      main {
+          flex: 1;
+      }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Inicio" onclick="showSection('Inicio')">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#Franelillas" onclick="showSection('Franelillas')">Franelillas</a></li>
+                            <li><a class="dropdown-item" href="#Camisas" onclick="showSection('Camisas')">Camisas</a></li>
+                            <li><a class="dropdown-item" href="#Sueteres" onclick="showSection('Suéteres')">Suéteres</a></li>
+                            
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto" onclick="showSection('Contacto')">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Nuestros clientes" onclick="showSection('Nuestros clientes')">Nuestros clientes</a>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="d-flex justify-content-between ">
+        <div class="col-md-8 text-center">
+            <h1><img src="img/cuztom logo.png" alt="Cuztom Logo" style="max-width: 500px; margin-top: 30px"></h1>
+        </div>
+        </header>
+           
+  
+  <main class="container my-3">
+      <section id="Inicio" class="content-section">
+          <div class="row">
+              <div class="col-md-8">
+                  <article>
+                      <h2>¿Quiénes somos?</h2>
+                      <p>
+                        Somos Cuztom, un espacio creado por y para amantes de la música. Nos apasiona la moda y creemos que una camiseta es mucho más que una prenda; es una forma de expresar tu identidad, tus gustos y tu pasión por las bandas que han marcado tu vida. Nos especializamos en ofrecer camisas exclusivas de tus grupos favoritos, con diseños auténticos que capturan la esencia del rock, punk, metal y más. Cada pieza es seleccionada con cuidado, asegurando calidad y estilo en cada detalle, porque entendemos que llevar a tu banda favorita es llevar un pedazo de tu historia. Únete a nuestra comunidad y lleva la música a donde vayas.
+                      </p>
+                  </article>
+                  <!-- Sección de personalización -->
+                  <section>
+                      <h2>Personalización única</h2>
+                      <p>En Cuztom, sabemos que cada fan es único. Por eso, ofrecemos la opción de personalizar tus camisas de bandas favoritas. Elige entre diferentes colores, estilos y agrega detalles especiales como frases, fechas de conciertos o diseños personalizados. Haz que cada prenda sea tan única como tu pasión por la música, creando una pieza exclusiva que refleje tu verdadero estilo y conexión con tus bandas favoritas. ¡Exprésate sin límites!</p>
+                  </section>
+              </div>
+              <!-- Barra lateral -->
+              <aside class="col-md-4 p-3">
+                  <h2>Modelos</h2>
+                  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="ropa pagina/LP Shirt.jpg" alt="Camisa de LP" class="brighten-image" style="width:400px" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="ropa pagina/Slipknot Shirt W.jpg" alt="Camisa de Slipknot mujer" class="brighten-image" style="width:400px" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="ropa pagina/Cure Tank W.jpg" alt="Franelilla de The Cure mujer" class="brighten-image" style="width:400px" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                      <img src="ropa pagina/Cure Tank.jpg" alt="Franelilla de The Cure" class="brighten-image" style="width:400px" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="ropa pagina/Roach Hoodie.jpg" alt="Sueter de Roach" class="brighten-image" style="width:400px" class="d-block w-100">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </aside>
+          </div>
+      </section>
+  
+      
+
+      </section>
+  
+      <section id="Franelillas" class="content-section">
+        <h2>Franelillas</h2>
+        <p>Franelillas para hombre y para mujer...</p>
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="ropa pagina/RHCP Tank W.jpg" alt="Franelilla de RHCP mujer" class="brighten-image">
+                <p>Franelilla de RHCP mujer</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/RHCP Tank.jpg" alt="Franelilla de RHCP" class="brighten-image">
+                <p>Franelilla de RHCP</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/Cure Tank W.jpg" alt="Franelilla de The Cure mujer" class="brighten-image">
+                <p>Franelilla de The Cure mujer</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/Cure Tank.jpg" alt="Franelilla de The Cure" class="brighten-image">
+                <p>Franelilla de The Cure</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/Beatles Tank W.jpg" alt="Franelilla de Beatles mujer" class="brighten-image">
+                <p>Franelilla de Beatles mujer</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/Beatles Tank.jpg" alt="Franelilla de Beatles" class="brighten-image">
+                <p>Franelilla de Beatles</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Camisas" class="content-section">
+        <h2>Camisas</h2>
+        <p>Camisas para hombre y para mujer</p>
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="ropa pagina/LP Shirt.jpg" alt="Camisa de LB" class="brighten-image">
+                <p>Camisa de LP</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/LP Shirt W.jpg" alt="Camisa de LB mujer" class="brighten-image">
+                <p>Camisa de LP mujer</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/Slipknot Shirt.jpg" alt="Camisa de Slipknot" class="brighten-image">
+                <p>Camisa de Slipknot</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/Slipknot Shirt W.jpg" alt="Camisa de Slipknot mujer" class="brighten-image">
+                <p>Camisa de Slipknot mujer</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/Korn Shirt.jpg" alt="Camisa de Korn" class="brighten-image">
+                <p>Camisa de Korn</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/Korn Shirt W.jpg" alt="Camisa de Korn mujer" class="brighten-image">
+                <p>Camisa de Korn mujer</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Suéteres" class="content-section">
+        <h2>Suéteres</h2>
+        <p>Suéteres para hombre y para mujer ¡¡UNISEX!!</p>
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="ropa pagina/Roach Hoodie.jpg" alt="Sueter de Roach" class="brighten-image">
+                <p>Suéter de Roach</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/Oasis Hoodie.jpg" alt="Sueter de Oasis" class="brighten-image">
+                <p>Suéter de Oasis</p>
+            </div>
+            <div class="image-item">
+                <img src="ropa pagina/Blink Hoodie.jpg" alt="Sueter de Blink" class="brighten-image">
+                <p>Suéter de Blink</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Contacto" class="content-section">
+        <h2>Contacto</h2>
+        <div class="container my-5">
+            <div class="row">
+                <!-- Información de la tienda -->
+                <div class="col-md-8">
+                    <h3>Información de Contacto</h3>
+                    <p><strong>Direccion de tienda física:</strong> Local A-3, C. C. Caobo, Maracay, Venezuela</p>
+                    <p><strong>Número de Teléfono:</strong> +58 424-5555555</p>
+                    <p><strong>Correo Electrónico:</strong> atencion.al.cliente@cuztom.com</p>
+                    <p><strong>Horario de Atención:</strong> Lunes a sábado de 8:00 a.m. a 6:00 p.m.</p>
+                </div>
+    
+                <!-- Formulario de contacto en la barra lateral -->
+                <aside class="col-md-4 bg-light p-3">
+                    <h3>Agiliza el proceso de respuesta:</h3>
+                    <form id="contactForm">
+                        <!-- Nombre -->
+                        <div class="form-group mb-3">
+                            <label for="firstName">Nombre</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Ingresa tu nombre" required>
+                        </div>
+    
+                        <!-- Apellido -->
+                        <div class="form-group mb-3">
+                            <label for="lastName">Apellido</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Ingresa tu apellido" required>
+                        </div>
+    
+                        <!-- Correo Electrónico -->
+                        <div class="form-group mb-3">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+                        </div>
+    
+                        <!-- Comentario -->
+                        <div class="form-group mb-3">
+                            <label for="comments">Comentario</label>
+                            <textarea class="form-control" id="comments" rows="4" placeholder="Escribe tu comentario aquí" required></textarea>
+                        </div>
+    
+                        <!-- Botón Enviar -->
+                        <button type="submit" class="btn btn-danger w-100">Enviar</button>
+                    </form>
+                </aside>
+            </div>
+        </div>
+    </section>
+    
+<!-- Inclusión de sección con animación -->
+    <section id="Nuestros clientes" class="content-section comentarios">
+        <h2>Comentarios de la Comunidad</h2>
+        <div class="comentarios-caja">
+            <p id="comentarios-text">“La mejor tienda para amantes de la música, ¡excelentes diseños y calidad!”</p>
+            <span id="comentarios-autor">- Juan Pérez</span>
+        </div>
+    </section>
+    
+    
+
+  </main>
+  
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 30865954 Valentina Baccellieri 2024 Derechos de autor</p>
+    </footer>
+
+    <!-- Enlace a Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Enlace a archivo JS -->
+    <script src="Js/index2.js"></script>
+</body>
+</html>

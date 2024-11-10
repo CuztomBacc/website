@@ -1,0 +1,206 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Estilo general de los párrafos */
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; /* Ajusta el interlineado si es necesario */
+}
+
+/* ----- Estilos Generales ----- */
+body {
+    font-family: 'EB Garamond', serif; /* Fuente principal */
+    background-image: url('../img/Fondo metal.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta para que cubra toda la ventana */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-color: #f3f3f3; /* Fondo claro de la barra de navegación */
+    
+}
+
+/* ----- Estilos de Header ----- */
+header {
+background-color: #121212; /* Fondo claro de la barra de navegación */
+background-image: url('../img/Fondo header.jpeg'); /* Reemplaza con la ruta de tu imagen */
+background-size: cover; /* Ajusta para que cubra toda la ventana */
+background-position: center; /* Centra la imagen en el fondo */
+margin-top: 60px; /* Ajusta este valor según la altura de la navbar */
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); /* Sombra opcional para dar profundidad */
+}
+
+h1, h2 {
+    font-family: 'New Rocker'; /* Fuente personalizada para títulos */
+    color: #EFE1D1; /* Color claro para contrastar con el fondo oscuro */
+}
+
+/* ----- Estilos de Navbar ----- */
+.navbar {
+    background-color: #FF8F00; /* Fondo claro de la barra de navegación */
+}
+
+.nav-link {
+    font-family: 'EB Garamond', serif; /* Fuente personalizada */
+    color: #000; /* Color del texto */
+}
+
+.nav-item {
+    font-size: 22px; /* Tamaño de las opciones del menú */
+}
+
+/* ----- Estilos de Footer ----- */
+footer {
+    background-color: #34495e; /* Fondo oscuro para el pie de página */
+    color: white; /* Texto en blanco */
+}
+
+/* ----- Tipografía general ----- */
+.dropdown-item, 
+.col-md-8, 
+.col-md-4, 
+.mt-5, 
+.bg-dark, 
+.content-section {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px; /* Tamaño de texto general */
+}
+
+
+/* Estilo para las columnas de la barra lateral */
+.col-md-4 {
+    background-color: rgb(143, 255, 143);
+}
+
+/* Estilos de los contenedores principales */
+.container {
+    max-width: 1200px; /* Ajusta el ancho según el diseño deseado */
+    margin: 0 auto; /* Centra el contenedor */
+    background-color: white; /* Fondo blanco para destacar el contenido */
+    padding: 20px; /* Añade padding para separar el contenido de los bordes */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1); /* Sombra opcional para dar profundidad */
+}
+
+/* ----- Estilos para el grid de imágenes ----- */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-items: center; /* Centrar las imágenes en su contenedor */
+    margin-top: 20px; /* Espacio superior del grid */
+}
+
+.image-item {
+    border: 2px solid #89fa72; /* Bordes de color gris claro */
+    padding: 10px; /* Espacio interior alrededor de la imagen */
+    text-align: center; /* Centrar el texto bajo las imágenes */
+    background-color: #acff9c; /* Fondo claro para los elementos */
+}
+
+.brighten-image {
+    width: 300px; /* Ajuste del ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    filter: brightness(1.2); /* Aumenta el brillo de la imagen */
+}
+
+/* Estilo del texto debajo de las imágenes */
+.image-item p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 14px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+}
+
+
+/* Desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Transiciones para los títulos */
+.content-section h2 {
+    transition: color 0.4s ease, font-size 0.4s ease;
+}
+
+.content-section h2:hover {
+    color: #00712D; /* Cambia este color según la paleta */
+    font-size: 2.5em; /* Ajusta el tamaño según el diseño */
+}
+
+/* Transición y efecto de marco en imágenes */
+.content-section img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(16, 44, 1, 0.3); /* Ajusta según el diseño */
+}
+
+#mainNavbar {
+    position: fixed;
+    top: 0px; /* Fija la navbar al tope del viewport al hacer scroll */
+    width: 1560px;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    background-color: #f98034; /* Fija un color de fondo para que no sea transparente */
+}
+
+/* Estilos de CSS para el cuadro de comentarios */
+.comentarios {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.comentarios-caja {
+    display: inline-block;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeSlideIn 1s forwards;
+}
+
+.comentarios-caja p {
+    font-size: 18px;
+    color: #333;
+}
+
+.comentarios-caja span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00712D;
+}
+
+/* Animación para el deslizamiento y desvanecimiento en cuadro de comentarios con CSS3*/
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeSlideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
